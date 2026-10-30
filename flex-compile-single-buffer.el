@@ -293,7 +293,7 @@ Return an alist in the following form:
       (if (child-of-class-p (eieio-object-class this) 'conf-flex-compiler)
 	  (config-prop-entry-set-required this))
       (setq buf (flex-compiler-start-buffer this start-type)))
-    (oset this :last-displayed-context
+    (oset this last-displayed-context
 	  `((newp . ,(not has-buffer-p))
 	    (buffer . ,buf)))))
 
